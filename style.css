@@ -1,0 +1,156 @@
+.headline-body {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-family: sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0033A0;
+}
+
+.search {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 40px;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login {
+  background-color: #0033A0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.headline-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-news {
+  flex: 2;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.right-news {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-item {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.side-item img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.side-item p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.grid-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 32px;
+}
+
+.card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.card h4 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.load-more {
+  text-align: center;
+  margin: 24px 0 48px;
+}
+
+.load-more button {
+  background-color: #0033A0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width:721px){ 
+  section{
+    font-size: 40px;
+  }
+  .right-news p{
+    font-size: 40px;
+  }
+  .headline{
+    width: 900px;
+    height: auto;
+  }
+  .grid-news{
+    width: 700px;
+    height: auto;
+  }
+
+  .grid-news h4{
+    font-size: 30px;
+  }
+  .grid-news p{
+    font-size: 20px;
+  }
+  img{
+    display: flex;
+    width: auto;
+  }
+
+  header{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
